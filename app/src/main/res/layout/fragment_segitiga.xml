@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/alas_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="157dp"
+            android:layout_marginBottom="624dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/masukkan_alas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tinggi_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="154dp"
+            android:layout_marginBottom="532dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/masukkan_tinggi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alas_segitiga" />
+
+        <Button
+            android:id="@+id/hitung_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="265dp"
+            android:layout_marginBottom="443dp"
+            android:text="@string/hitung_luas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tinggi_segitiga" />
+
+        <TextView
+            android:id="@+id/luas1_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="311dp"
+            android:layout_marginBottom="381dp"
+            android:text="@string/luas_segitiga"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hitung_segitiga" />
+
+        <TextView
+            android:id="@+id/hasilLuas1_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="198dp"
+            android:layout_marginBottom="377dp"
+            android:text="@string/_000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/luas1_segitiga"
+            app:layout_constraintTop_toBottomOf="@+id/hitung_segitiga" />
+
+        <TextView
+            android:id="@+id/keliling1_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="331dp"
+            android:text="@string/keliling_segitiga"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/luas1_segitiga" />
+
+        <TextView
+            android:id="@+id/hasilKeliling1_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="224dp"
+            android:layout_marginBottom="329dp"
+            android:text="@string/_000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/keliling1_segitiga"
+            app:layout_constraintTop_toBottomOf="@+id/hasilLuas1_segitiga" />
+
+        <Button
+            android:id="@+id/share_segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="262dp"
+            android:layout_marginBottom="229dp"
+            android:text="@string/share_hasil"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/keliling1_segitiga" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

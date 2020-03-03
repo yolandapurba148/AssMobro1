@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigasi"
+    app:startDestination="@id/menu2">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.assmobro1.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.assmobro1.about"
+        android:label="about" />
+    <fragment
+        android:id="@+id/persegi"
+        android:name="com.example.assmobro1.persegi"
+        android:label="persegi" />
+    <fragment
+        android:id="@+id/segitiga"
+        android:name="com.example.assmobro1.segitiga"
+        android:label="segitiga" />
+    <fragment
+        android:id="@+id/menu2"
+        android:name="com.example.assmobro1.menu"
+        android:label="menu" >
+        <action
+            android:id="@+id/action_menu2_to_segitiga"
+            app:destination="@id/segitiga" />
+        <action
+            android:id="@+id/action_menu2_to_persegi"
+            app:destination="@id/persegi" />
+        <action
+            android:id="@+id/action_menu2_to_about"
+            app:destination="@id/about" />
+    </fragment>
+</navigation>
